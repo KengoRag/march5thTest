@@ -1,31 +1,44 @@
-var subjects = [
+	var subjects = [
 	"Math",
 	"English",
 	"Science",
 	"Social Studies"];
 
-var string = "This is a string";
+	var string = "Music";
 
-subjects.pop(3);
+	subjects.pop(3);
 
-subjects.push(string);
+	subjects.push(string);
 
-console.log(subjects);
+	console.log(subjects);
 
-function forLoop() {
-	var i ;
-	var text= " " ;
-	for (i = 0; i <subjects.length; i++) {
-		text += subjects[i] + "<br>";
+	var i; 
+
+	var text = " ";
+
+
+function printArray() {
+	var i; 
+
+	var text = " ";
+
+	for (i=0; i<4; i++) {
+		text += subjects[i] + " ";
 	}
 
-	document.getElementById("fourth").innerHTML = forLoop;
-};
+	document.getElementById("fourth").innerHTML = text;
 
-var person = {
-	firstName: "George",
-	lastName: "Orwell",
-	book: "Animal Farm"
+	var person = {
+		firstName: "John",
+		lastName: "Smith",
+		Major: "History"
+	}
+
+	var text2 = person.firstName + " " + person.lastName + " " + person.Major
+
+	document.getElementById("fourthSecond").innerHTML = text2;
 }
 
-document.getElementById("fourth").innerHTML= person;
+
+
+
